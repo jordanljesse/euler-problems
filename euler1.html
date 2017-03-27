@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META charset="UTF-8">
+<TITLE>Euler Problem #1</TITLE>
+</HEAD>
+<BODY>
+	<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</p><br>
+	<script>
+		var counter = 0;
+		var sum = 0;
+		while (counter < 1000) {
+			console.log("The counter is equal to " + counter + ".");
+			if (counter % 3 == 0 || counter % 5 == 0) {
+				console.log("The counter is a multiple of 3 or 5.");
+				sum += counter;
+			} else {
+				console.log("Nope.");
+			}
+			counter++;
+		}
+		document.write("<p>The sum of all the multiples of 3 or 5 below 1000 is " + sum + ".</p>");
+	</script>
+</BODY>
+</HTML>
